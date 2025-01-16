@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Option du menu -->
+    <item
+        android:id="@+id/menu_option_recherche"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/stripe_ic_search" />
+
+    <item
+        android:id="@+id/menu_option_supprimer"
+        android:title="Rechercher un évènement"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="101"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_option_accueil"
+        android:title="Accueil"
+        android:orderInCategory="1001"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_option_inscription"
+        android:title="Inscription"
+        android:orderInCategory="1002"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_option_connexion"
+        android:title="Connexion"
+        android:orderInCategory="1003"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_option_qrcodes"
+        android:title="Mes QR Codes"
+        android:orderInCategory="1004"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_option_creer_event"
+        android:title="Créer un évènement"
+        android:orderInCategory="1005"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_option_deconnexion"
+        android:title="Déconnexion"
+        android:orderInCategory="1006"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/evenement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Image à droite -->
+    <ImageView
+        android:id="@+id/imageViewPhotoEvent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_marginStart="0dp" />
+
+    <!-- Bloc texte à gauche -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/textViewNomEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Nom de l'utilisateur"/>
+
+        <TextView
+            android:id="@+id/textViewLieuEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Email de l'utilisateur"/>
+
+        <TextView
+            android:id="@+id/textViewTypeEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:background="@drawable/rounded_background"
+            android:text="Email de l'utilisateur" />
+    </LinearLayout>
+</LinearLayout>

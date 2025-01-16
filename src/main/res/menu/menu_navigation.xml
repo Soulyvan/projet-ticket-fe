@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Lien vers l'activité principale -->
+    <item
+        android:id="@+id/menu_home"
+        android:title="Accueil"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <!-- Lien vers les paramètres -->
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Paramètres"
+        android:orderInCategory="101"
+        app:showAsAction="ifRoom" />
+
+    <!-- Lien vers le profil -->
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profil"
+        android:orderInCategory="102"
+        app:showAsAction="ifRoom" />
+
+</menu>

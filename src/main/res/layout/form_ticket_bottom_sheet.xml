@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_select_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez une catégorie"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_nombre_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de tickets"
+        android:inputType="number"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_envoyer_paiement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

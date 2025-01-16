@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nom de l'événement -->
+        <EditText
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom de l'événement"
+            android:inputType="text" />
+
+        <!-- Photo de l'événement -->
+        <ImageView
+            android:id="@+id/event_photo_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Aperçu de la photo de l'événement" />
+
+        <Button
+            android:id="@+id/select_photo_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Choisir une photo" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/event_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine" />
+
+        <!-- Type d'événement -->
+        <EditText
+            android:id="@+id/event_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type d'événement"
+            android:inputType="text" />
+
+        <!-- Date et heure -->
+        <EditText
+            android:id="@+id/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date et heure (YYYY-MM-DD HH:mm)"
+            android:inputType="datetime" />
+
+        <!-- Lieu -->
+        <EditText
+            android:id="@+id/event_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lieu"
+            android:inputType="text" />
+
+        <!-- Liste des catégories -->
+        <LinearLayout
+            android:id="@+id/categories_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Bouton pour ajouter une catégorie -->
+        <Button
+            android:id="@+id/add_category_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une catégorie" />
+
+        <!-- Bouton soumettre -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Créer l'événement"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
